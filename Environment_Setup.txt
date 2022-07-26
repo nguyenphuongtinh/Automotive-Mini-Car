@@ -1,0 +1,39 @@
+## This is a Quick guide to setup the environment to run SelfDrive.py
+
+>>>>>>>>>>>>>>>> LINUX OR Rasbperry PI Commands  <<<<<<<<<<<<<<<<<<
+
+1) python3 -m pip install --user virtualenv
+
+2) python3 -m virtualenv sdc_env
+
+3) source sdc_env/bin/activate
+
+4) ## Installing the modules will be different for Rasbperry Pi and different for Linux 
+
+# For Pi User:
+pip3 install -r requirements_pi.txt
+         
+# For Linux User: 
+pip3 install -r requirements.txt
+
+>>>>>>>>>>>>>>>> Windows Commands  <<<<<<<<<<<<<<<<
+
+0) Install Python 3.6.8 rc1 Windows
+# URL = [ https://www.python.org/ftp/python/3.6.8/python-3.6.8rc1-amd64.exe ]
+
+1) Check which Python version is installed and where,then copy that address,
+# where.exe python
+e.g. (C:\Program Files\Python36\python.exe)
+
+2.a) Install virtualenv module to create virtual environments
+# pip install virtualenv 
+2.b) Install virtual environment using virtualenv from the previously found Python.
+# python -m virtualenv -p="C:\Program Files\Python36\python.exe" Path/To/Create/VirtualEnvironment
+
+3) Run Cmd Prmpt and activate environment using following cmd
+# Path_to_Virtual_Environment/Scripts/activate
+
+4) Place requirement.txt to Path_to_Virtual_Environment/Scripts
+
+5) Install required files to run Project
+# pip install -r requirements.txt
